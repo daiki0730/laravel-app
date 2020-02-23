@@ -6,12 +6,11 @@ use Illuminate\Http\Request;
 
 class HelloController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $data = [
-            'msg' => 'sample',
+            'msg' =>$request->hello,
         ];
-
         return view('hello.index', $data);
     }
 }

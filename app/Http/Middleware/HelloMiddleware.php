@@ -15,8 +15,8 @@ class HelloMiddleware
      */
     public function handle($request, Closure $next)
     {
-        $hello = 'hellosample',
-        $bye = 'byesample',
+        $hello = 'hellosample';
+        $bye = 'byesample';
         $data = [
             'hello' =>$hello,
             'bye' => $bye 
